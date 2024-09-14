@@ -1,9 +1,10 @@
 -- Highlight todo, notes, etc in comments
 return {
 	{
-		"xiyaowong/transparent.nvim",
+		"akinsho/bufferline.nvim",
 		config = function()
-			require("transparent").clear_prefix("BufferLine")
+			vim.opt.termguicolors = true
+			require("bufferline").setup()
 		end,
 	},
 }
