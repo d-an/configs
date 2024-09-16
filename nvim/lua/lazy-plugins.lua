@@ -5,7 +5,7 @@ require("lazy").setup({
 	require("plugins/which-key"),
 	require("plugins/telescope"),
 	require("plugins/lspconfig"),
-	require("plugins/conform"),
+	-- require("plugins/conform"),
 	require("plugins/cmp"),
 	require("plugins/tokyonight"),
 	require("plugins/todo-comments"),
