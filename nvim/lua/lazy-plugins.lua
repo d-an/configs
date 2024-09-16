@@ -14,6 +14,7 @@ require("lazy").setup({
 	require("plugins/transparent"),
 	require("plugins/bufferline"),
 	require("plugins/neogit"),
+	require("plugins/better-escape"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
