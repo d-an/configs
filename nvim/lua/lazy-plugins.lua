@@ -13,7 +13,7 @@ require("lazy").setup({
 	require("plugins/treesitter"),
 	require("plugins/transparent"),
 	require("plugins/bufferline"),
-	--	require("plugins/obsidian"),
+	require("plugins/neogit"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
