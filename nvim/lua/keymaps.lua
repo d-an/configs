@@ -38,4 +38,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
+-- indentation:
+vim.keymap.set("n", "<Tab>", ">0", { desc = "indent" })
+vim.keymap.set("n", "<S-Tab>", "<0", { desc = "de-indent" })
+vim.keymap.set("v", "<Tab>", ">0gv", { desc = "indent" })
+vim.keymap.set("v", "<S-Tab>", "<0gv", { desc = "de-indent" })
+
+
 -- vim: ts=2 sts=2 sw=2 et
