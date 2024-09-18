@@ -39,10 +39,15 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- indentation:
-vim.keymap.set("n", "<Tab>", ">0", { desc = "indent" })
-vim.keymap.set("n", "<S-Tab>", "<0", { desc = "de-indent" })
-vim.keymap.set("v", "<Tab>", ">0gv", { desc = "indent" })
-vim.keymap.set("v", "<S-Tab>", "<0gv", { desc = "de-indent" })
+-- some terminal map Ctrl-i to Tab and therefore using Tab for indentation clashes with vim's jumplist (<C-i>)
+-- vim.keymap.set("n", "<Tab>", ">0", { desc = "indent" })
+-- vim.keymap.set("n", "<S-Tab>", "<0", { desc = "de-indent" })
+-- vim.keymap.set("v", "<Tab>", ">0gv", { desc = "indent" })
+-- vim.keymap.set("v", "<S-Tab>", "<0gv", { desc = "de-indent" })
+vim.keymap.set("n", ">", ">0", { desc = "indent" })
+vim.keymap.set("n", "<", "<0", { desc = "de-indent" })
+vim.keymap.set("v", ">", ">0gv", { desc = "indent" })
+vim.keymap.set("v", "<", "<0gv", { desc = "de-indent" })
 
 
 -- vim: ts=2 sts=2 sw=2 et
