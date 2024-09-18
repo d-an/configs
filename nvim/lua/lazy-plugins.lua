@@ -15,6 +15,7 @@ require("lazy").setup({
 	require("plugins/bufferline"),
 	require("plugins/neogit"),
 	require("plugins/better-escape"),
+	require("plugins/no-neck-pain"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
