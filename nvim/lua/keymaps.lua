@@ -49,5 +49,4 @@ vim.keymap.set("n", "<", "<0", { desc = "de-indent" })
 vim.keymap.set("v", ">", ">0gv", { desc = "indent" })
 vim.keymap.set("v", "<", "<0gv", { desc = "de-indent" })
 
-
 -- vim: ts=2 sts=2 sw=2 et
