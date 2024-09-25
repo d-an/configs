@@ -2,6 +2,7 @@ require("lazy").setup({
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 	-- Use `opts = {}` to force a plugin to be loaded.
 	require("plugins/gitsigns"),
+	require("plugins/neogit"),
 	require("plugins/which-key"),
 	require("plugins/telescope"),
 	require("plugins/lspconfig"),
@@ -13,9 +14,9 @@ require("lazy").setup({
 	require("plugins/treesitter"),
 	require("plugins/transparent"),
 	require("plugins/bufferline"),
-	require("plugins/neogit"),
 	require("plugins/better-escape"),
 	require("plugins/no-neck-pain"),
+  require("plugins/lualine"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
