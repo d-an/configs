@@ -17,6 +17,7 @@ require("lazy").setup({
 	require("plugins/better-escape"),
 	require("plugins/no-neck-pain"),
   require("plugins/lualine"),
+  require("plugins/harpoon"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
