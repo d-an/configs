@@ -13,7 +13,7 @@ require("lazy").setup({
 	require("plugins/mini"),
 	require("plugins/treesitter"),
 	require("plugins/transparent"),
-	require("plugins/bufferline"),
+	-- require("plugins/bufferline"),
 	require("plugins/better-escape"),
 	require("plugins/no-neck-pain"),
   require("plugins/lualine"),
